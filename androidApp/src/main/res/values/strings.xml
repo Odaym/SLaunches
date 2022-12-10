@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpaceX Launches</string>
+    <string name="ok">OK</string>
+    <string name="reload_items">Reload</string>
+    <string name="launch_name">Launch name: %1$s</string>
+    <string name="launch_details">Launch details: %1$s</string>
+    <string name="launch_year">Launch year: %1$s</string>
+    <string name="launch_status_success">Successful</string>
+    <string name="launch_status_unsuccessful">Unsuccessful</string>
+    <string name="fetch_results_failure">Well that failed…Probably because…</string>
+</resources>
