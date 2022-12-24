@@ -5,13 +5,12 @@ import com.saltserv.slaunches.cache.DatabaseDriverFactory
 import com.saltserv.slaunches.entity.RocketLaunch
 import com.saltserv.slaunches.network.SpaceXApi
 
-class SpaceXSDK(databaseDriverFactory: DatabaseDriverFactory) {
+class SpaceXSDK (databaseDriverFactory: DatabaseDriverFactory) {
     private val database = Database(databaseDriverFactory)
     private val api = SpaceXApi()
 
-    suspend fun getLaunches(forceReload: Boolean): List<RocketLaunch> {
+    @Throws(Exception::class) suspend fun getLaunches(forceReload: Boolean): List<RocketLaunch> {
         val cachedLaunches = database.getAllLaunches()
-
         return if (cachedLaunches.isNotEmpty() && !forceReload) {
             cachedLaunches
         } else {

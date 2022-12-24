@@ -21,9 +21,9 @@ kotlin {
     sourceSets {
 
         val sqlDelightVersion: String by project
-        val coroutinesVersion = "1.6.4"
-        val serializationVersion = "1.3.3"
-        val ktorVersion = "2.1.2"
+        val coroutinesVersion: String by project
+        val serializationVersion: String by project
+        val ktorVersion: String by project
 
         val commonMain by getting {
             dependencies {

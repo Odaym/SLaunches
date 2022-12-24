@@ -3,7 +3,7 @@ buildscript {
     val hiltVersion : String by project
 
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-serialization:1.7.20")
+        classpath("org.jetbrains.kotlin:kotlin-serialization:1.7.21")
         classpath("com.squareup.sqldelight:gradle-plugin:$sqlDelightVersion")
         classpath("com.google.dagger:hilt-android-gradle-plugin:$hiltVersion")
     }
